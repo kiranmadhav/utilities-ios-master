@@ -1,4 +1,4 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.7
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -13,9 +13,9 @@ let package = Package(
     ],
     dependencies: [
         // CleanroomLogger at a commit on master, until there's a release supporting spm.
-        .package(url: "https://github.com/emaloney/CleanroomLogger", .revision("d732baead85b77471505daf290212700b9d87a05")),
-        .package(url: "https://github.com/mxcl/PromiseKit", .exact("6.10.0")),
-        .package(url: "https://github.com/SlaunchaMan/GCDWebServer.git", .branch("swift-package-manager"))
+        .package(url: "https://github.com/kiranmadhav/CleanroomLogger", from: "1.0.0"),
+        .package(url: "https://github.com/mxcl/PromiseKit", from: "6.10.0"),
+        .package(url: "https://github.com/SlaunchaMan/GCDWebServer.git", branch: "935e2736044e71e5341663c3cc9a335ba6867a2b")
     ],
     targets: [
         .target(
