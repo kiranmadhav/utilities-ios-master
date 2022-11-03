@@ -12,9 +12,10 @@
     {
       "identity" : "gcdwebserver",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/SlaunchaMan/GCDWebServer.git",
+      "location" : "https://github.com/kiranmadhav/GCDWebServer",
       "state" : {
-        "revision" : "935e2736044e71e5341663c3cc9a335ba6867a2b"
+        "revision" : "935e2736044e71e5341663c3cc9a335ba6867a2b",
+        "version" : "4.0.0"
       }
     },
     {

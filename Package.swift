@@ -15,7 +15,7 @@ let package = Package(
         // CleanroomLogger at a commit on master, until there's a release supporting spm.
         .package(url: "https://github.com/kiranmadhav/CleanroomLogger", from: "1.0.0"),
         .package(url: "https://github.com/mxcl/PromiseKit", from: "6.10.0"),
-        .package(url: "https://github.com/SlaunchaMan/GCDWebServer.git", branch: "935e2736044e71e5341663c3cc9a335ba6867a2b")
+        .package(url: "https://github.com/kiranmadhav/GCDWebServer", from: "4.0.0")
     ],
     targets: [
         .target(
