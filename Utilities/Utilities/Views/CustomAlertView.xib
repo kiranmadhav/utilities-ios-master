@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomAlertViewController" customModule="Utilities">
+            <connections>
+                <outlet property="alertView" destination="wDm-g1-7y6" id="s3P-6H-6JR"/>
+                <outlet property="cancelButton" destination="6VV-v4-dZD" id="r0n-hf-zPz"/>
+                <outlet property="customButton" destination="i9C-Hu-4hi" id="7KZ-A9-piH"/>
+                <outlet property="horizontalSeparator" destination="6cv-cK-jvv" id="r2W-bE-wvn"/>
+                <outlet property="labelSeparatorConstraint" destination="wgR-Wa-VcI" id="FDQ-bC-yRM"/>
+                <outlet property="labelSeparatorView" destination="tLf-5X-TZO" id="EX5-ID-diG"/>
+                <outlet property="messageCenterXConstraint" destination="osV-nl-Bh4" id="IG4-fr-RYa"/>
+                <outlet property="messageLabel" destination="H8c-Eu-Xht" id="TFN-GI-rns"/>
+                <outlet property="okButton" destination="0TJ-3k-Ozq" id="Gli-Mj-7mr"/>
+                <outlet property="titleCenterXConstraint" destination="xap-IP-4gK" id="jy8-9r-A35"/>
+                <outlet property="titleLabel" destination="vH8-VY-Rmr" id="6LW-wl-cE5"/>
+                <outlet property="verticalSeparator" destination="nL8-lm-igN" id="LWE-eZ-0Hj"/>
+                <outlet property="view" destination="u8a-OJ-mEc" id="wGQ-sM-wHk"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="u8a-OJ-mEc">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wDm-g1-7y6" userLabel="Alert View">
+                    <rect key="frame" x="25" y="253.5" width="325" height="180"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vH8-VY-Rmr" userLabel="Title Label" customClass="CustomAlertLabel" customModule="Utilities">
+                            <rect key="frame" x="20" y="18" width="285" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tLf-5X-TZO" userLabel="Label Separator View">
+                            <rect key="frame" x="20" y="48.5" width="285" height="1"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="Rgu-CE-PrF"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H8c-Eu-Xht" userLabel="Message Label" customClass="CustomAlertLabel" customModule="Utilities">
+                            <rect key="frame" x="20" y="49.5" width="285" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6cv-cK-jvv" userLabel="Horizontal Separator View">
+                            <rect key="frame" x="0.0" y="149" width="325" height="1"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="Y6g-Rb-XFg"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6VV-v4-dZD" userLabel="Cancel Button">
+                            <rect key="frame" x="0.0" y="150" width="161.5" height="30"/>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="onCancelTapped:" destination="-1" eventType="touchUpInside" id="UMs-41-j2r"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nL8-lm-igN" userLabel="Vertical Separator View">
+                            <rect key="frame" x="162.5" y="150" width="1" height="30"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="1" id="Ddi-ny-4An"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0TJ-3k-Ozq" userLabel="Ok Button">
+                            <rect key="frame" x="163.5" y="150" width="161.5" height="30"/>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="onOkTapped:" destination="-1" eventType="touchUpInside" id="lBc-nB-UsZ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i9C-Hu-4hi" userLabel="Custom Button">
+                            <rect key="frame" x="20" y="125" width="285" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="tgn-oW-0n9"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="OK"/>
+                            <connections>
+                                <action selector="onCustomTapped:" destination="-1" eventType="touchUpInside" id="xNf-o9-UYN"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="vH8-VY-Rmr" firstAttribute="top" secondItem="wDm-g1-7y6" secondAttribute="top" constant="18" id="5T8-xE-wGS"/>
+                        <constraint firstItem="vH8-VY-Rmr" firstAttribute="trailing" secondItem="i9C-Hu-4hi" secondAttribute="trailing" id="CRP-FJ-G6f"/>
+                        <constraint firstItem="0TJ-3k-Ozq" firstAttribute="leading" secondItem="6VV-v4-dZD" secondAttribute="trailing" constant="2" id="IVd-Z7-Cfh"/>
+                        <constraint firstItem="nL8-lm-igN" firstAttribute="height" secondItem="6VV-v4-dZD" secondAttribute="height" id="Jhp-s5-r3p"/>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="500" id="KZN-A5-prt"/>
+                        <constraint firstAttribute="bottom" secondItem="i9C-Hu-4hi" secondAttribute="bottom" constant="15" id="M2v-7m-aQE"/>
+                        <constraint firstAttribute="bottom" secondItem="nL8-lm-igN" secondAttribute="bottom" id="M8J-5I-Kb4"/>
+                        <constraint firstItem="6cv-cK-jvv" firstAttribute="bottom" secondItem="6VV-v4-dZD" secondAttribute="top" id="PAy-JS-uVE"/>
+                        <constraint firstItem="i9C-Hu-4hi" firstAttribute="leading" secondItem="wDm-g1-7y6" secondAttribute="leading" constant="20" id="PE3-u0-Hgt"/>
+                        <constraint firstItem="0TJ-3k-Ozq" firstAttribute="height" secondItem="6VV-v4-dZD" secondAttribute="height" id="QoB-bE-cQ3"/>
+                        <constraint firstItem="i9C-Hu-4hi" firstAttribute="centerX" secondItem="wDm-g1-7y6" secondAttribute="centerX" id="X4E-vD-JCK"/>
+                        <constraint firstAttribute="bottom" secondItem="6VV-v4-dZD" secondAttribute="bottom" id="ZKz-Sg-Frb"/>
+                        <constraint firstItem="H8c-Eu-Xht" firstAttribute="trailing" secondItem="i9C-Hu-4hi" secondAttribute="trailing" id="bwT-wC-jgm"/>
+                        <constraint firstItem="tLf-5X-TZO" firstAttribute="trailing" secondItem="vH8-VY-Rmr" secondAttribute="trailing" id="c5y-xc-WJM"/>
+                        <constraint firstItem="tLf-5X-TZO" firstAttribute="leading" secondItem="vH8-VY-Rmr" secondAttribute="leading" id="cHh-J1-W85"/>
+                        <constraint firstAttribute="trailing" secondItem="0TJ-3k-Ozq" secondAttribute="trailing" id="dfz-D5-o5V"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="180" id="eKh-zt-sgA"/>
+                        <constraint firstItem="nL8-lm-igN" firstAttribute="leading" secondItem="6VV-v4-dZD" secondAttribute="trailing" constant="1" id="mIl-26-jTX"/>
+                        <constraint firstItem="6cv-cK-jvv" firstAttribute="width" secondItem="wDm-g1-7y6" secondAttribute="width" id="mTp-Zp-gV1"/>
+                        <constraint firstItem="H8c-Eu-Xht" firstAttribute="leading" secondItem="i9C-Hu-4hi" secondAttribute="leading" id="meh-9g-B0l"/>
+                        <constraint firstAttribute="bottom" secondItem="0TJ-3k-Ozq" secondAttribute="bottom" id="ndg-hx-lAy"/>
+                        <constraint firstItem="0TJ-3k-Ozq" firstAttribute="width" secondItem="6VV-v4-dZD" secondAttribute="width" id="oIz-pk-t3w"/>
+                        <constraint firstItem="H8c-Eu-Xht" firstAttribute="centerX" secondItem="wDm-g1-7y6" secondAttribute="centerX" id="osV-nl-Bh4"/>
+                        <constraint firstItem="6cv-cK-jvv" firstAttribute="leading" secondItem="6VV-v4-dZD" secondAttribute="leading" id="tEJ-1C-6Vf"/>
+                        <constraint firstItem="vH8-VY-Rmr" firstAttribute="leading" secondItem="i9C-Hu-4hi" secondAttribute="leading" id="usB-tY-KIe"/>
+                        <constraint firstItem="H8c-Eu-Xht" firstAttribute="top" secondItem="tLf-5X-TZO" secondAttribute="bottom" id="wgR-Wa-VcI" userLabel="Message Label.top = Label Separator View.bottom + 8"/>
+                        <constraint firstItem="i9C-Hu-4hi" firstAttribute="top" relation="greaterThanOrEqual" secondItem="H8c-Eu-Xht" secondAttribute="bottom" constant="15" id="wyN-As-7To"/>
+                        <constraint firstItem="vH8-VY-Rmr" firstAttribute="centerX" secondItem="wDm-g1-7y6" secondAttribute="centerX" id="xap-IP-4gK"/>
+                        <constraint firstItem="6VV-v4-dZD" firstAttribute="leading" secondItem="wDm-g1-7y6" secondAttribute="leading" id="yw3-Ye-xS7"/>
+                        <constraint firstItem="tLf-5X-TZO" firstAttribute="top" secondItem="vH8-VY-Rmr" secondAttribute="bottom" constant="10" id="zvJ-rG-Lht" userLabel="Label Separator View.top = Title Label.bottom + 8"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="HpC-ke-962"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="wDm-g1-7y6" firstAttribute="centerY" secondItem="u8a-OJ-mEc" secondAttribute="centerY" constant="10" id="JeA-qb-kQt"/>
+                <constraint firstAttribute="width" secondItem="wDm-g1-7y6" secondAttribute="width" priority="999" constant="50" id="Uus-oZ-BUj"/>
+                <constraint firstItem="wDm-g1-7y6" firstAttribute="centerX" secondItem="u8a-OJ-mEc" secondAttribute="centerX" id="XD5-Hx-44u"/>
+                <constraint firstItem="wDm-g1-7y6" firstAttribute="width" relation="lessThanOrEqual" secondItem="u8a-OJ-mEc" secondAttribute="width" constant="50" id="yqB-Pi-Bxc"/>
+            </constraints>
+            <point key="canvasLocation" x="140" y="135"/>
+        </view>
+    </objects>
+</document>
